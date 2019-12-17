@@ -30,6 +30,7 @@ import socket
 import random
 from docopt import docopt
 
+
 class TagGenerator:
     chars = None
     tag = None
@@ -134,7 +135,6 @@ class SipResponse:
 
     def contact_is_private(self):
         buffer = self.contact.split(":")
-        print(buffer)
         addr = buffer[1]
 
         ip = IP(addr)
@@ -185,16 +185,21 @@ if __name__ == '__main__':
     response.set_request(request)
     exit_code = response.get_status()
 
+    debug_info = ""
+    debug_info = debug_info + "---REQUEST---\n"
+    debug_info = debug_info + request.payload.decode()
+    debug_info = debug_info + "\n---REQUEST---\n"
+    debug_info = debug_info + "----Response---\n"
+    debug_info = debug_info + r.decode()
+    debug_info = debug_info + "----Response---\n"
+    debug_info = debug_info + "Exit code: {0}\n".format(exit_code)
+    debug_info = debug_info + "=========================\n"
+
+    if arguments['-d']:
+        print(debug_info)
     if arguments['-g']:
         f = open(arguments['-g'], 'a')
-        f.write("---REQUEST---\n")
-        f.write(request.payload.decode())
-        f.write("\n---REQUEST---\n")
-        f.write("----Response---\n")
-        f.write(r.decode())
-        f.write("----Response---\n")
-        f.write("Exit code: {0}\n".format(exit_code))
-        f.write("=========================\n")
+        f.write(debug_info)
         f.close()
 
     sys.exit(exit_code)

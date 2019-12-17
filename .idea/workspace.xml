@@ -16,8 +16,8 @@
       <file leaf-file-name="check_sip.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/check_sip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+            <state relative-caret-position="120">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#966#976#0" expanded="true" />
               </folding>
@@ -170,8 +170,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/check_sip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+        <state relative-caret-position="120">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#966#976#0" expanded="true" />
           </folding>
