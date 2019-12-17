@@ -10,7 +10,7 @@ Options:
   -w WARNVAL     Set the warning value for ping times.
   -c CRITVAL     Set the critical value for ping times.
   -l CLIENTHOST  Set the client hostname to override what gethostname() is returning.
-  -O CLIENTPORT  Set the port on which this machine is expecting replies.
+  -o CLIENTPORT  Set the port on which this machine is expecting replies.
   -f FROMPEER    Set the "from" peer in the request. (Defaults to watch)
   -p PORT        Set the remote port on which the remote host is listening to SIP requests.
   -n             Tells the script that responses should be NAT'd. (Sets rport in SIP Via)
